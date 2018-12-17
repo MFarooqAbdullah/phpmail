@@ -1,0 +1,158 @@
+<html>
+
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+
+    <title>Elegant Login - Designscrazed</title>
+    <style>
+        body {
+                /* background: url('http://i.imgur.com/Eor57Ae.jpg') no-repeat fixed center center; */
+                /* background-size: cover; */
+                font-family: Montserrat;
+            }
+    
+            .logo {
+                width: 213px;
+                height: 36px;
+                background: url('http://i.imgur.com/fd8Lcso.png') no-repeat;
+                margin: 30px auto;
+            }
+    
+            .login-block {
+                /* width: 320px; */
+                width: 400px;
+                padding: 20px;
+                background:transparent;
+                border-radius: 5px;
+                border-top: 5px solid #20426A ;
+                margin: 0 auto;
+            }
+    
+            .login-block h1 {
+                text-align: center;
+                color: #000;
+                font-size: 18px;
+                text-transform: uppercase;
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+    
+            .login-block input {
+                width: 100%;
+                height: 42px;
+                box-sizing: border-box;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                margin-bottom: 20px;
+                font-size: 14px;
+                font-family: Montserrat;
+                /* padding: 0 20px 0 50px; */
+                padding: 0 20px 0 10px;
+                outline: none;
+            }
+    
+    
+            /* .login-block input#username {
+        background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+        background-size: 16px 80px;
+    } */
+    
+            /* .login-block input#username:focus {
+        background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
+        background-size: 16px 80px;
+    } */
+    
+            /* .login-block input#password {
+        background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
+        background-size: 16px 80px;
+    }
+    
+    .login-block input#password:focus {
+        background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
+        background-size: 16px 80px;
+    } */
+    
+            .login-block input:active,
+            .login-block input:focus {
+                border: 1px solid #20426A ;
+            }
+    
+            .login-block .form-control:active,
+            .login-block .form-control:focus {
+                border: 1px solid #00aaf7 !important;
+    
+            }
+    
+            .login-block button {
+                width: 100%;
+                height: 40px;
+                background: #20426A ;
+                box-sizing: border-box;
+                border-radius: 5px;
+                border: 1px solid #20426A ;
+                color: #fff;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-family: Montserrat;
+                outline: none;
+                cursor: pointer;
+            }
+    
+            .login-block button:hover {
+                background: #20426aeb ;
+            }
+    
+            .login-block .form-control {
+                height: 150px;
+                width: 100%;
+                /* .................. */         
+                
+                box-sizing: border-box;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                margin-bottom: 20px;
+                font-size: 14px;
+                font-family: Montserrat;
+                /* padding: 0 20px 0 50px; */
+                padding: 0 20px 0 10px;
+                outline: none;
+            }
+        </style>
+</head>
+
+<body>
+    <!-- <form method="post" action="send_mail.php">
+        To : <input type="text" name="mail_to"> <br />
+        Subject : <input type="text" name="mail_sub">
+        <br />
+        Message <input type="text" name="mail_msg">
+        <br />
+        <input type="submit" value="Send Email">
+    </form> -->
+    <div class="login-block">
+        <!-- <input type="text" value="" placeholder="Name" id="username" />
+        <input type="email" value="" placeholder="email" id="email" />
+        <input type="number" value="" placeholder="Phone" id="phone" />
+        <input type="text" value="" placeholder="company" id="password" />
+        <input type="datetime-local" value="" placeholder="Date/time" id="date" />
+        <textarea class="form-control" placeholder="comment" rows="5" id="comment"></textarea>
+        <button>Submit</button> -->
+        <form method="post" action="send_mail.php">
+            <input type="text" placeholder="name" name="name"> <br />
+            <input type="email" placeholder="email" name="email"> <br />
+            <input type="text" placeholder="phone" name="phone">
+            <br />
+            <input type="text" placeholder="Your Company/Corporate Name"  name="company">
+            <br />
+            <input type="text" placeholder="date"  name="date">
+            <br />
+            <input type="text" placeholder="message" name="message">
+            <br />
+            <input type="submit"  value="Send Email">
+        </form>
+    </div>
+</body>
+
+</html>
